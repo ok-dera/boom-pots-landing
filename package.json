@@ -1,0 +1,14 @@
+{
+  "name": "boom-pots-site",
+  "private": true,
+  "description": "Landing page for Boom Pots by Sokando Games",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o styles.css --minify",
+    "dev": "tailwindcss -i src/input.css -o styles.css --watch",
+    "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
