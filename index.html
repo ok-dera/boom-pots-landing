@@ -149,20 +149,186 @@
       </a>
     </p>
 
-    <!-- ── Three cards ── -->
-    <ul class="mt-14 grid list-none grid-cols-1 gap-7 p-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+    <!-- ── Pot designs — its own scrolling row ── -->
+    <div class="mt-14">
+      <h2 class="mb-2 text-center font-display text-[1.55rem] leading-tight text-parchment-hi">Break every pot</h2>
+      <p class="mx-auto mb-6 max-w-[46ch] text-center text-sm font-semibold text-parchment-hi/90">
+        Tap it, it shatters, the coins spill out. Every level paints a new pot — drag the row, or use the arrows.
+      </p>
 
-      <li class="card overflow-hidden p-3">
-        <img src="assets/screens/gameplay-grid.jpg" width="540" height="1170" loading="lazy" decoding="async"
-             class="block w-full rounded-[16px] object-cover"
-             style="aspect-ratio:3/4;object-position:center 40%"
-             alt="A level in progress: a grid of patterned clay pots over the jungle, thirty-eight seconds left, zero of one hundred and ten points scored.">
-        <h2 class="mt-4 mb-2 px-2 text-center font-display text-[1.55rem] leading-tight text-terracotta-deep">Break every pot</h2>
-        <p class="mb-2 px-3 pb-1 text-center text-sm font-semibold text-ink/80">
-          Tap it, it shatters, the coins spill out. Clear enough before the clock runs out.
-        </p>
-      </li>
+      <div class="relative">
+        <ul id="pot-slides" tabindex="0" role="region" aria-label="Pot designs"
+            class="no-scrollbar -mx-5 flex list-none snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pt-2 pb-5 md:-mx-10 md:px-10">
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-01.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level one: a grid of plain terracotta pots with fine gold banding, several already cracked, over the river valley.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Plain clay</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 1</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-02.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level two: wide cream pots painted with dark brown spirals and meander bands.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">White meander</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 2</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-03.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level four: red and gold pots with a pale kite motif and a gold neck.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Red kite</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 4</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-04.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level four further in: the same red and gold kite pots, most of them now split with cracks.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Red kite, split</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 4</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-05.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level five: pale blue pots with a ribbed waist and frosted markings.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Blue ice</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 5</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-06.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level six: two-tone terracotta jars with a ribbed collar and looped handles.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Ribbed jar</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 6</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-07.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level seven: round bronze-brown pots with a fine pattern pressed into the clay.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Dark bronze</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 7</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-08.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level eight: near-black round pots banded with red triangles.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Obsidian</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 8</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-09.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level nine: glossy deep red pots with a gold seam running down the belly.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Red lacquer</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 9</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-10.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level ten: turquoise pots striped with yellow under a red and white zigzag collar.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Teal bands</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 10</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-11.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level eleven: chalk-white pots carrying a red flag and grey step motif.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Chalk chevron</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 11</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-12.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level twelve: gold two-handled amphorae with black rims and a painted band of colour.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Gold amphora</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 12</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="w-[66vw] max-w-[248px] shrink-0 snap-center">
+            <figure class="card h-full overflow-hidden p-3">
+              <img src="assets/slides/pot-13.jpg" width="540" height="1124" loading="lazy" decoding="async"
+                   class="block w-full rounded-[16px] object-cover"
+                   style="aspect-ratio:3/4;object-position:center 28%"
+                   alt="Level thirteen: plain clay pots and painted meander pots mixed into the same grid.">
+              <figcaption class="mt-4 mb-2 px-2 text-center">
+                <span class="block font-display text-[1.2rem] leading-tight text-terracotta-deep">Mixed run</span>
+                <span class="block text-sm font-extrabold text-ink/70">Level 13</span>
+              </figcaption>
+            </figure>
+            </li>
+        </ul>
+        <button type="button" id="pot-prev" aria-controls="pot-slides" aria-label="Previous pots"
+                class="btn btn-gold absolute left-0 top-[40%] hidden h-12 w-12 min-h-0 -translate-y-1/2 p-0 disabled:opacity-0 md:inline-flex">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M15.4 4.6 8 12l7.4 7.4 1.6-1.7L11.2 12 17 6.3z"/></svg>
+        </button>
+        <button type="button" id="pot-next" aria-controls="pot-slides" aria-label="More pots"
+                class="btn btn-gold absolute right-0 top-[40%] hidden h-12 w-12 min-h-0 -translate-y-1/2 p-0 disabled:opacity-0 md:inline-flex">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8.6 4.6 16 12l-7.4 7.4L7 17.7 12.8 12 7 6.3z"/></svg>
+        </button>
+      </div>
+    </div>
 
+    <!-- ── Two cards ── -->
+    <ul class="mx-auto mt-10 grid max-w-4xl list-none grid-cols-1 gap-7 p-0 sm:grid-cols-2 lg:gap-8">
       <li class="card overflow-hidden p-3">
         <img src="assets/screens/how-to-play.jpg" width="540" height="1170" loading="lazy" decoding="async"
              class="block w-full rounded-[16px] object-cover"
@@ -174,7 +340,7 @@
         </p>
       </li>
 
-      <li class="card overflow-hidden p-3 sm:col-span-2 lg:col-span-1">
+      <li class="card overflow-hidden p-3">
         <img src="assets/screens/map-savanna.jpg" width="540" height="1170" loading="lazy" decoding="async"
              class="block w-full rounded-[16px] object-cover"
              style="aspect-ratio:3/4;object-position:center 30%"
@@ -391,6 +557,57 @@
       btn.disabled = false;
     }
   });
+
+  /* ── Pot slider: arrows + click-and-drag. Native wheel/swipe still works. ── */
+  const strip = document.getElementById("pot-slides");
+  if (strip) {
+    const prev = document.getElementById("pot-prev");
+    const next = document.getElementById("pot-next");
+    const calm = matchMedia("(prefers-reduced-motion: reduce)");
+    const step = () => strip.firstElementChild.getBoundingClientRect().width + 20; // + gap-5
+
+    const sync = () => {
+      const max = strip.scrollWidth - strip.clientWidth;
+      prev.disabled = strip.scrollLeft < 4;
+      next.disabled = strip.scrollLeft > max - 4;
+    };
+    const nudge = (dir) => strip.scrollBy({
+      left: dir * step(),
+      behavior: calm.matches ? "auto" : "smooth",
+    });
+
+    prev.addEventListener("click", () => nudge(-1));
+    next.addEventListener("click", () => nudge(1));
+    strip.addEventListener("scroll", sync, { passive: true });
+    addEventListener("resize", sync);
+    sync();
+
+    // Drag with a mouse. Touch scrolls natively, so leave it alone.
+    let from = 0, at = 0, dragging = false;
+    strip.addEventListener("pointerdown", (e) => {
+      if (e.pointerType !== "mouse" || e.button !== 0) return;
+      dragging = true;
+      from = e.clientX;
+      at = strip.scrollLeft;
+      strip.style.scrollSnapType = "none";   // snap fights a manual scrollLeft
+      strip.classList.add("cursor-grabbing", "select-none");
+      strip.setPointerCapture(e.pointerId);
+    });
+    strip.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      e.preventDefault();
+      strip.scrollLeft = at - (e.clientX - from);
+    });
+    const drop = () => {
+      if (!dragging) return;
+      dragging = false;
+      strip.style.scrollSnapType = "";       // re-snaps to the nearest card
+      strip.classList.remove("cursor-grabbing", "select-none");
+    };
+    strip.addEventListener("pointerup", drop);
+    strip.addEventListener("pointercancel", drop);
+    strip.classList.add("cursor-grab");
+  }
 })();
 </script>
 </body>

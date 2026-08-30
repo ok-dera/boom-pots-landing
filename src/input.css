@@ -309,6 +309,10 @@
 }
 
 @layer utilities {
+  /* Scrollers drive themselves: arrows, drag, wheel. No native bar. */
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+
   /* Idle float — transform only */
   @keyframes bob {
     0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg)); }
