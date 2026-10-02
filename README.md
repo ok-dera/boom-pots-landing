@@ -46,7 +46,6 @@ const TRAILER_ID = "";                    // YouTube video id only, e.g. dQw4w9W
 
 Also update before launch:
 
-- `privacy.html` — the footer links to it and it does not exist yet.
 - `mailto:hello@sokandogames.com` in the footer and in `NOTIFY_MAILTO`.
 
 ## Art
